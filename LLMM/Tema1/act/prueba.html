@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba Parpadeo</title>
+</head>
+<body>
+<script>
+window.setInterval (BlinkIt, 500);
+var color = "red";
+function BlinkIt () {
+var blink = document.getElementById ("blink");
+color = (color == "#ffffff")? "black" : "#ffffff";
+blink.style.color = color;
+blink.style.fontSize='36px';}
+</script>
+<div id="blink">5€ GRATIS</div>
+<div id="blink" onclick="parent.location='http://norfipc.com'">
+</div>
+</body>
+</html>
